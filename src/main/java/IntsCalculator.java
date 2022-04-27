@@ -1,10 +1,8 @@
 public class IntsCalculator implements Ints {
 
-    protected final Calculator target;
-    protected Calculator.Formula formula;
+    protected final Calculator.Formula formula;
 
     public IntsCalculator() {
-        this.target = new Calculator();
         this.formula = new Calculator.Formula();
     }
 
