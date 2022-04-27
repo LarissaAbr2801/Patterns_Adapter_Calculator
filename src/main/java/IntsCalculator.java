@@ -1,9 +1,11 @@
 public class IntsCalculator implements Ints {
 
-    protected final Calculator.Formula formula;
+    protected final Calculator target;
+    protected Calculator.Formula formula;
 
     public IntsCalculator() {
-        this.formula = new Calculator.Formula();
+        this.target = new Calculator();
+        this.formula = target.newFormula();
     }
 
     @Override
